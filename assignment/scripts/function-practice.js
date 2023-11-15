@@ -31,28 +31,37 @@ function addNumbers(firstNumber, secondNumber) {
 console.log(addNumbers(7,9));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(numberOne, NumberTwo, numberThree) {
+  const multNumber = numberOne * NumberTwo * numberThree;
+  return multNumber;
 }
+console.log(multiplyThree(4, 5, 3));
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
+    return `${number} is positive`;
   }
-  return;
-}
+  return `${number} is negative`;
+  }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
-
+console.log(isPositive(-7));
+console.log(isPositive(22));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
-
+  const lastItem = array[array.length - 1];
+  if (array.length > 0) {
+return lastItem;
+  } return undefined;
 }
+
+console.log(getLast([7, 8, 9]));
+console.log(getLast([]));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
