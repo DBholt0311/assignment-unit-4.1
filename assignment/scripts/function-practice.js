@@ -67,11 +67,9 @@ console.log(getLast([]));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-  for (let arrayIndex=0; arrayIndex<array.length; arrayIndex++){
     for (let arrayIndex in array){
       if (value === array[arrayIndex]){
       return true;
-      }
     }
   }return false;
 }
